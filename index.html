@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionX Robotics | Multimodal AI Vision Robot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-vision">VisionX</span>
+                <span class="logo-robotics">Robotics</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#problem" data-i18n="nav_problem">Pain Points</a></li>
+                <li><a href="#products" data-i18n="nav_products">Products</a></li>
+                <li><a href="#technology" data-i18n="nav_technology">Technology</a></li>
+                <li><a href="#team" data-i18n="nav_team">Team</a></li>
+                <li><a href="#business" data-i18n="nav_business">Business</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <div class="lang-switcher-wrap">
+                <button type="button" class="lang-switcher active" data-lang="en" aria-label="English">EN</button>
+                <span class="lang-divider">|</span>
+                <button type="button" class="lang-switcher" data-lang="zh" aria-label="中文">中文</button>
+            </div>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-gradient"></div>
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="hero-floating-shapes">
+                <span class="shape shape-1"></span>
+                <span class="shape shape-2"></span>
+                <span class="shape shape-3"></span>
+                <span class="shape shape-4"></span>
+                <span class="shape shape-5"></span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-tag" data-i18n="hero_tag">2025 · AI Revolution in Vision Care</p>
+            <h1 class="hero-title">
+                <span class="title-line" data-i18n="hero_title1">Multimodal AI</span>
+                <span class="title-line accent" data-i18n="hero_title2">Vision Robot</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Smart vision care within everyone's reach</p>
+            <p class="hero-desc"><span data-i18n="hero_desc1">The world's first vision robot system covering Screening → Diagnosis → Treatment.</span><br><span data-i18n="hero_desc2">Professional screening in 3 minutes, even in remote areas.</span></p>
+            <div class="hero-cta">
+                <a href="#products" class="btn btn-primary">
+                    <span data-i18n="hero_cta_products">Explore Products</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">Contact Us</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="hero_scroll">Scroll down</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- 项目摘要 -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title" data-i18n="about_title">Project Summary</h2>
+                <p class="section-desc" data-i18n="about_desc">Built on years of research and clinical experience from Harvard Medical School ophthalmology.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card" data-aos>
+                    <div class="card-icon">♾</div>
+                    <h3 data-i18n="about_card1_title">World First</h3>
+                    <p data-i18n="about_card1_text">VisionDiagnose: 10+ proprietary AI models for natural language intake + medical image analysis + eye-tracking fusion diagnosis.</p>
+                </div>
+                <div class="about-card" data-aos>
+                    <div class="card-icon">⏱</div>
+                    <h3 data-i18n="about_card2_title">Proven Deployment</h3>
+                    <p data-i18n="about_card2_text">VisionScan is already deployed in Zhejiang, Sichuan, Xinjiang (China) and Ethiopia.</p>
+                </div>
+                <div class="about-card" data-aos>
+                    <div class="card-icon">🎯</div>
+                    <h3 data-i18n="about_card3_title">Precision</h3>
+                    <p data-i18n="about_card3_text">0.01∆ strabismus measurement; industry-leading heterophoria accuracy.</p>
+                </div>
+                <div class="about-card" data-aos>
+                    <div class="card-icon">🔄</div>
+                    <h3 data-i18n="about_card4_title">Full Loop</h3>
+                    <p data-i18n="about_card4_text">Hospital–community–optical store coverage: VisionScan → VisionDiagnose → VisionTreat in one flow.</p>
+                </div>
+            </div>
+            <div class="stats-row">
+                <div class="stat" data-aos>
+                    <span class="stat-num" data-target="2300">0</span>
+                    <span class="stat-unit" data-i18n="stat1_unit">B</span>
+                    <span class="stat-label" data-i18n="stat1_label">Global ophthalmic market 2030</span>
+                </div>
+                <div class="stat" data-aos>
+                    <span class="stat-num" data-target="3000">0</span>
+                    <span class="stat-unit" data-i18n="stat2_unit">B</span>
+                    <span class="stat-label" data-i18n="stat2_label">China ophthalmic market 2025</span>
+                </div>
+                <div class="stat" data-aos>
+                    <span class="stat-num" data-target="50">0</span>
+                    <span class="stat-unit" data-i18n="stat3_unit">%</span>
+                    <span class="stat-label" data-i18n="stat3_label">Refractive error coverage</span>
+                </div>
+                <div class="stat" data-aos>
+                    <span class="stat-num" data-target="40">0</span>
+                    <span class="stat-unit" data-i18n="stat4_unit">K</span>
+                    <span class="stat-label" data-i18n="stat4_label">People per doctor gap globally</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行业痛点 -->
+    <section class="section problem" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title" data-i18n="problem_title">Pain Points</h2>
+                <p class="section-desc" data-i18n="problem_desc">WHO: Untreated refractive error causes 111M vision impairment globally.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card" data-aos>
+                    <div class="problem-icon"><span data-i18n="problem1_icon">Care</span></div>
+                    <h3 data-i18n="problem1_title">Staff & skill gap</h3>
+                    <ul>
+                        <li data-i18n="problem1_1">Shortage of optometrists, variable quality</li>
+                        <li data-i18n="problem1_2">Short visits, high misdiagnosis</li>
+                        <li data-i18n="problem1_3">Diagnosis relies on subjective experience</li>
+                    </ul>
+                </div>
+                <div class="problem-card" data-aos>
+                    <div class="problem-icon"><span data-i18n="problem2_icon">Tools</span></div>
+                    <h3 data-i18n="problem2_title">Lack of smart devices</h3>
+                    <ul>
+                        <li data-i18n="problem2_1">Manual, experience-dependent exams</li>
+                        <li data-i18n="problem2_2">Subjective results</li>
+                        <li data-i18n="problem2_3">Few quantified vision analysis tools</li>
+                    </ul>
+                </div>
+                <div class="problem-card" data-aos>
+                    <div class="problem-icon"><span data-i18n="problem3_icon">Service</span></div>
+                    <h3 data-i18n="problem3_title">Limited coverage</h3>
+                    <ul>
+                        <li data-i18n="problem3_1">Rural areas lack professional care</li>
+                        <li data-i18n="problem3_2">Asia: 50,000+ people per doctor</li>
+                        <li data-i18n="problem3_3">Africa: 1 optometrist per 400,000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品与解决方案 -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title" data-i18n="products_title">Products & Solutions</h2>
+                <p class="section-desc" data-i18n="products_desc">Three products for a full AI vision-care loop.</p>
+            </div>
+            <div class="products-showcase">
+                <div class="product-card product-scan" data-aos>
+                    <div class="product-badge" data-i18n="prod_scan_badge">Screening</div>
+                    <h3>VisionScan</h3>
+                    <p class="product-subtitle" data-i18n="prod_scan_sub">Mobile vision screening</p>
+                    <p class="product-desc" data-i18n="prod_scan_desc">Remote screening: myopia, strabismus, PD, dark adaptation; refraction, phoria, AC/A, NPC, acuity, contrast sensitivity.</p>
+                    <div class="product-features">
+                        <span data-i18n="prod_scan_f1">Mobile app</span>
+                        <span data-i18n="prod_scan_f2">AMD/diabetic retinopathy screening</span>
+                        <span data-i18n="prod_scan_f3">Any setting</span>
+                    </div>
+                </div>
+                <div class="product-card product-diagnose" data-aos>
+                    <div class="product-badge" data-i18n="prod_diag_badge">Diagnosis</div>
+                    <h3>VisionDiagnose</h3>
+                    <p class="product-subtitle" data-i18n="prod_diag_sub">AI diagnosis engine</p>
+                    <p class="product-desc" data-i18n="prod_diag_desc">Natural language + image analysis; auto output of refraction, strabismus. 0.01∆ phoria, Kappa in seconds.</p>
+                    <div class="product-features">
+                        <span data-i18n="prod_diag_f1">Multimodal model</span>
+                        <span data-i18n="prod_diag_f2">10+ dedicated AI models</span>
+                        <span data-i18n="prod_diag_f3">Expert-level</span>
+                    </div>
+                </div>
+                <div class="product-card product-treat" data-aos>
+                    <div class="product-badge" data-i18n="prod_treat_badge">Treatment</div>
+                    <h3>VisionTreat</h3>
+                    <p class="product-subtitle" data-i18n="prod_treat_sub">Vision treatment robot</p>
+                    <p class="product-desc" data-i18n="prod_treat_desc">Amblyopia, convergence, strabismus intervention. First full Screening–Diagnosis–Treatment AI vision robot.</p>
+                    <div class="product-features">
+                        <span data-i18n="prod_treat_f1">Hardware robot</span>
+                        <span data-i18n="prod_treat_f2">Precise intervention</span>
+                        <span data-i18n="prod_treat_f3">Full loop</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-advantages">
+                <h4 data-i18n="products_adv_title">Key advantages</h4>
+                <div class="advantages-list">
+                    <div class="advantage" data-aos>
+                        <span class="adv-icon">✓</span>
+                        <span data-i18n="products_adv1">High AI precision: phoria to 0.01∆</span>
+                    </div>
+                    <div class="advantage" data-aos>
+                        <span class="adv-icon">✓</span>
+                        <span data-i18n="products_adv2">All settings: hospital, community, rural, overseas</span>
+                    </div>
+                    <div class="advantage" data-aos>
+                        <span class="adv-icon">✓</span>
+                        <span data-i18n="products_adv3">Full care loop: screening to intervention in one place</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术突破 -->
+    <section class="section technology" id="technology">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title" data-i18n="tech_title">Technology & Research</h2>
+                <p class="section-desc" data-i18n="tech_desc">Harvard Medical School Schepens Eye Research Institute · Leading mobile vision research group.</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card" data-aos>
+                    <h4 data-i18n="tech1_title">Multimodal fusion</h4>
+                    <p data-i18n="tech1_text">Deep fusion of images and eye-tracking; high complexity; models improve with real-world use.</p>
+                </div>
+                <div class="tech-card" data-aos>
+                    <h4 data-i18n="tech2_title">Smart detection</h4>
+                    <p data-i18n="tech2_text">Medical image understanding, smart subjective assessment, eye-movement big data; micropixel-level capture.</p>
+                </div>
+                <div class="tech-card" data-aos>
+                    <h4 data-i18n="tech3_title">Patient-facing LLM</h4>
+                    <p data-i18n="tech3_text">Natural language, context-aware; adapts exam path to patient feedback; slow-thinking reasoning for accuracy.</p>
+                </div>
+                <div class="tech-card" data-aos>
+                    <h4 data-i18n="tech4_title">Patents & papers</h4>
+                    <p data-i18n="tech4_text">4 international patents · 15 SCI papers · AOA W.Feinbloom & G.Fry awards · $12.83M NIH funding.</p>
+                </div>
+            </div>
+            <div class="deployment-map" data-aos>
+                <h4 data-i18n="tech_map_title">Global deployment</h4>
+                <div class="map-locations">
+                    <span class="location" data-i18n="tech_map_1">Xinjiang Hetian</span>
+                    <span class="location" data-i18n="tech_map_2">Sichuan Liangshan</span>
+                    <span class="location" data-i18n="tech_map_3">Sichuan Kangding</span>
+                    <span class="location" data-i18n="tech_map_4">Jiaxing · Shanghai · Chengdu</span>
+                    <span class="location" data-i18n="tech_map_5">Ethiopia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心团队 -->
+    <section class="section team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">05</span>
+                <h2 class="section-title" data-i18n="team_title">Core Team</h2>
+                <p class="section-desc" data-i18n="team_desc">Harvard Medical School + Tsinghua + top industry.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card" data-aos>
+                    <div class="team-avatar">
+                        <img src="images/team/luogang.png" alt="罗罡" onerror="this.style.display='none';this.nextElementSibling.classList.add('show');">
+                        <span class="team-avatar-fallback">罗罡</span>
+                    </div>
+                    <h4>罗罡 Gang Luo</h4>
+                    <p class="team-role" data-i18n="team1_role">Founder · Associate Professor, Harvard Medical School</p>
+                    <p data-i18n="team1_bio">AI, optics, vision science · AOA W.Feinbloom Award, G.Fry Award</p>
+                </div>
+                <div class="team-card" data-aos>
+                    <div class="team-avatar">
+                        <img src="images/team/chenjianwen.png" alt="陈建文" onerror="this.style.display='none';this.nextElementSibling.classList.add('show');">
+                        <span class="team-avatar-fallback">陈建文</span>
+                    </div>
+                    <h4>陈建文 Jianwen Chen</h4>
+                    <p class="team-role" data-i18n="team2_role">Co-founder · PhD</p>
+                    <p data-i18n="team2_bio">Tsinghua EE · 20+ years video analysis & AI · Harvard visiting scholar</p>
+                </div>
+                <div class="team-card" data-aos>
+                    <div class="team-avatar">
+                        <img src="images/team/matteo.png" alt="Matteo Tomasi" onerror="this.style.display='none';this.nextElementSibling.classList.add('show');">
+                        <span class="team-avatar-fallback">Tomasi</span>
+                    </div>
+                    <h4>Matteo Tomasi</h4>
+                    <p class="team-role" data-i18n="team3_role">Co-founder · PhD, MSc, Eng</p>
+                    <p data-i18n="team3_bio">Harvard Medical School · NIH SBIR PI · Commercialized NIH products</p>
+                </div>
+                <div class="team-card" data-aos>
+                    <div class="team-avatar">
+                        <img src="images/team/xufeng.png" alt="徐枫" onerror="this.style.display='none';this.nextElementSibling.classList.add('show');">
+                        <span class="team-avatar-fallback">徐枫</span>
+                    </div>
+                    <h4>徐枫</h4>
+                    <p class="team-role" data-i18n="team4_role">Chief AI Scientist · PhD</p>
+                    <p data-i18n="team4_bio">UPenn postdoc · Samsung Research · Bingo Tech</p>
+                </div>
+            </div>
+            <div class="advisors" data-aos>
+                <h4 data-i18n="advisors_title">Advisors</h4>
+                <p data-i18n="advisors_text">Eli Peli (Harvard Professor) · Mengyu Wang (Harvard Assistant Prof) · Kyle Keane (MIT Research Scientist)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商业模式 -->
+    <section class="section business" id="business">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">06</span>
+                <h2 class="section-title" data-i18n="business_title">Business & Funding</h2>
+                <p class="section-desc" data-i18n="business_desc">Diversified revenue · Targeting billion-dollar leadership.</p>
+            </div>
+            <div class="business-cards">
+                <div class="business-card" data-aos>
+                    <h4 data-i18n="biz1_title">AI vision robot sales</h4>
+                    <p data-i18n="biz1_text">Hardware to hospitals, optical chains, vision centers; $14K–$2.1M per unit; B2B2C.</p>
+                </div>
+                <div class="business-card" data-aos>
+                    <h4 data-i18n="biz2_title">Agent subscription</h4>
+                    <p data-i18n="biz2_text">Per terminal/outlet annual or monthly; per-test pricing.</p>
+                </div>
+                <div class="business-card" data-aos>
+                    <h4 data-i18n="biz3_title">Data monetization</h4>
+                    <p data-i18n="biz3_text">Anonymous insights; research services for government, pharma, institutions.</p>
+                </div>
+                <div class="business-card" data-aos>
+                    <h4 data-i18n="biz4_title">Tech licensing</h4>
+                    <p data-i18n="biz4_text">Core AI to medical groups and OEMs; custom model development.</p>
+                </div>
+            </div>
+            <div class="funding-box" data-aos>
+                <h4 data-i18n="funding_title">Pre-A round</h4>
+                <div class="funding-details">
+                    <div class="fund-item">
+                        <span class="fund-amount" data-i18n="funding_amount">$5M</span>
+                        <span class="fund-label" data-i18n="funding_label_amount">Amount</span>
+                    </div>
+                    <div class="fund-item">
+                        <span class="fund-amount" data-i18n="funding_equity">10%</span>
+                        <span class="fund-label" data-i18n="funding_label_equity">Equity</span>
+                    </div>
+                    <div class="fund-usage">
+                        <span data-i18n="funding_use1">R&D & production 40%</span>
+                        <span data-i18n="funding_use2">Market expansion 30%</span>
+                        <span data-i18n="funding_use3">Team 20%</span>
+                        <span data-i18n="funding_use4">Compliance 10%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系与页脚 -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">07</span>
+                <h2 class="section-title" data-i18n="contact_title">Contact</h2>
+                <p class="section-desc" data-i18n="contact_desc">Bridging vision care with AI — professional eye health within reach.</p>
+            </div>
+            <div class="contact-info" data-aos>
+                <div class="contact-item">
+                    <span class="contact-label" data-i18n="contact_label_name">Company</span>
+                    <span>VisionX Robotics Inc.</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label" data-i18n="contact_label_addr">Address</span>
+                    <span>1209 North Orange Street, Wilmington, DE, United States @Delaware</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label" data-i18n="contact_label_size">Team size</span>
+                    <span data-i18n="contact_size">30</span>
+                </div>
+            </div>
+            <div class="mission-statement" data-aos>
+                <p data-i18n="mission1">Smart vision care within everyone's reach</p>
+                <p data-i18n="mission2">Largest vision-care AI platform in China</p>
+                <p data-i18n="mission3">Reshaping the $230B global ophthalmic market with AI</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <span>VisionX</span><span>Robotics</span>
+                </div>
+                <p data-i18n="footer_copyright">© 2025 VisionX Robotics Inc. Multimodal AI Vision Robot</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
