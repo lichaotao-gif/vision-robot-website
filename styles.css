@@ -521,6 +521,25 @@ body {
     margin-bottom: 1rem;
 }
 
+.card-icon.card-icon-svg {
+    width: 3rem;
+    height: 3rem;
+    color: var(--accent-cyan, #00d4ff);
+    filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.4));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-icon.card-icon-svg svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.about-card:hover .card-icon.card-icon-svg {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 16px rgba(0, 212, 255, 0.6));
+}
+
 .about-card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
